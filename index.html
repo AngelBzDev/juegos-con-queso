@@ -2,14 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Juegos Con Queso</title>
 </head>
 
 <body>
-  <h1>Juegos con queso</h1>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="./public/image/Team_Quesologo_square.png" class="logo" />
+            <p class="navbar__logo--title">Juegos con Queso🧀</p>
+        </div>
+        <div class="searchbar__container">
+            <div class="searchbar">
+                <input type="text" placeholder="Busca el 🧀Juego !" name="search" autocomplete="off" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="info_user">
+            <div class="info__user--login">
+                <button class="btn" id="iniciar">
+            <i class="fa-solid fa-user-ninja"></i>
+          </button>
+                <p class="info__user--text" id="user-name">Inicia Sesión / Registrate</p>
+            </div>
+            <button class="btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Juegos con Queso🧀</h1>
+        </div>
+    </header>
+
+    <script src="https://kit.fontawesome.com/1d180a8764.js" crossorigin="anonymous"></script>
+    <script src="./js/firebase/firebase.config.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>

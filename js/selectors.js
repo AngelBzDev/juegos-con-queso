@@ -1,0 +1,1 @@
+export const btnIniciar = document.querySelector("#iniciar");
