@@ -12,8 +12,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
     <title>Juegos Con Queso</title>
   </head>
 
@@ -21,7 +25,7 @@
     <nav class="navbar">
       <div class="navbar__logo">
         <img
-          src="./public/image/Team_Quesologo_square.png"
+          src="./src/assets/img/Team_Quesologo_square.png"
           class="logo"
           alt="logo"
         />
@@ -62,11 +66,22 @@
         <h1 class="title">Juegos con Queso🧀</h1>
       </div>
     </header>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!--Swippers-->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/1d180a8764.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/index.js" type="module"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>
