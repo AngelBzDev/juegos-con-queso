@@ -82,6 +82,7 @@ body {
 
 .navbar__options {
   position: absolute;
+  z-index: 100;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -109,10 +110,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar__options {
-    display: flex;
-  }
-
   #btn__menu {
     display: none;
   }
@@ -261,5 +258,5 @@ img.logo {
   content: 'Un juego';
   font-weight: 700;
   transform: scale(1);
-  filter: grayscale(70%);
+  filter: grayscale(75%);
 }

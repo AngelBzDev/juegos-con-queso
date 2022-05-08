@@ -5,11 +5,10 @@ document.querySelector("#btn__menu").addEventListener("click", () => {
   } else {
     navbarMenu.classList.replace("flex", "hidden");
   }
-  navbarMenu.classList.toggle("animate__fadeInLeft");
+  /* navbarMenu.classList.toggle("animate__fadeInLeft"); */
 });
 
 //Swiper
-
 const swiperContainer = document.querySelector(".swiper-wrapper");
 const slides = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 const url = "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2022/02/08/620280c33764b.r_d.3246-2700-0.jpeg"
@@ -26,7 +25,7 @@ const swiper = new Swiper(".mySwiper", {
   slidesPerView: 8,
   spaceBetween: 20,
   slidesPerGroup: 2,
-  loop: true,
+  loop: false,
   loopFillGroupWithBlank: false,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -62,3 +61,5 @@ const swiper = new Swiper(".mySwiper", {
     }
   },
 });
+
+
