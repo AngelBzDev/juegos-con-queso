@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juegos Con Queso</title>
-</head>
-<body>
-  
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Last-Modified" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <link rel="stylesheet" href="./src/styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>Juegos Con Queso</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img
+          src="./src/assets/img/Team_Quesologo_square.png"
+          class="logo"
+          alt="logo"
+        />
+        <p class="navbar__logo--title">Juegos con Queso🧀</p>
+      </div>
+      <button class="btn" id="btn__menu" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="hidden navbar__options">
+        <div class="searchbar__container">
+          <div class="searchbar">
+            <input
+              type="text"
+              placeholder="Busca el 🧀Juego !"
+              name="search"
+              autocomplete="off"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="info_user">
+          <div class="info__user--login">
+            <button class="btn" id="iniciar">
+              <i class="fa-solid fa-user-ninja"></i>
+            </button>
+            <p class="info__user--text" id="user-name">
+              Inicia Sesión / Registrate
+            </p>
+          </div>
+          <button class="btn" id="carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Juegos con Queso🧀</h1>
+      </div>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!--Swippers-->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <section class="container">
+      <div class="sub__title-container">
+        <h3 class="sub__title">juegos 🧀 mas populares</h3>
+        <a href="#" class="sub__link">Ver todo</a>
+      </div>
+      <div class="popular__games four">
+        <!-- Cards -->
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/1d180a8764.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/index.js" type="module"></script>
+  </body>
 </html>
