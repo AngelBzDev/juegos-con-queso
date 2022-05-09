@@ -28,9 +28,35 @@ body {
   font-size: 3rem;
 }
 
+.sub__title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.sub__link {
+  display: block;
+  text-decoration: none;
+  color: var(--yellow);
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.sub__link:hover {
+  background: var(--strongGray);
+}
+
+.sub__link:visited {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   max-width: 1930px;
 }
 
@@ -91,7 +117,6 @@ body {
   background: var(--background);
   padding: 1rem;
   border-radius: 0 0 10px 10px;
-  transition: all 5s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -102,6 +127,7 @@ body {
     align-items: center;
     width: calc(100% - 218px);
     position: static;
+    padding: 0;
   }
 }
 
@@ -190,7 +216,7 @@ img.logo {
 
 .header {
   width: 100%;
-  height: 55vh;
+  height: 63vh;
   background: url(https://www.elgato.com/sites/default/files/2021-12/Video%20Team%20Queso.png)
     no-repeat center center;
   background-size: cover;
@@ -206,6 +232,10 @@ img.logo {
   height: 15%;
   position: relative;
   top: -1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 95%;
+  max-width: 1930px;
 }
 
 .swiper-slide {
@@ -225,38 +255,90 @@ img.logo {
   object-fit: cover;
 }
 
-.card__swiper{
+.card__swiper {
   border-radius: 8px;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   overflow: hidden;
   border: 3px solid transparent;
   background: transparent;
-
 }
 
-.card__swiper:hover{
+.card__swiper:hover {
   border: 3px solid var(--yellow);
 }
 
-.card__swiper::after{
-  content: '';
+.card__swiper::after {
+  content: "";
   width: 100%;
   height: 100%;
-  background: url(https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2022/02/08/620280c33764b.r_d.3246-2700-0.jpeg) center ;
+  background: url(https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2022/02/08/620280c33764b.r_d.3246-2700-0.jpeg)
+    center;
   background-size: cover;
   border-radius: 10px;
   padding: 5px;
   object-fit: cover;
   transform: scale(1.1);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
-  border: 3px solid transparent
+  border: 3px solid transparent;
 }
 
-.card__swiper:hover::after{
-  content: 'Un juego';
+.card__swiper:hover::after {
+  content: "Un juego";
   font-weight: 700;
   transform: scale(1);
-  filter: grayscale(75%);
+  filter: grayscale(45%);
+}
+
+.sub__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular__games {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 1rem 0;
+}
+
+.popular__game{
+  padding: 1rem;
+  background: var(--strongGray);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  transition: all .2s ease-in-out;
+}
+
+.popular__game:hover{
+  transform: translateY(-2px);
+  background: #34373a
+}
+
+.popular__game-img{
+  width: 100px;
+  height: 63.65px;
+  border-radius: 8px;
+}
+
+.popular__game-info{
+  display: flex;
+}
+
+.popular__game-desc{
+  margin-left: 1rem;
+}
+
+.popular__game-desc h4, p{
+  margin: .2rem 0 .3rem 0;
+  font-size: .9rem;
+}
+
+.popular__game-desc p{
+  font-size: .8rem;
+  color: rgb(172, 172, 172);
+  font-weight: 500;
 }
